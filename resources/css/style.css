@@ -1,6 +1,9 @@
 html{
-  background-color: black;
+  background-color: white;
   font-family: 'Droid Sans', sans-serif;
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: visible;
 }
 
 .bold{
@@ -27,7 +30,9 @@ h3{
 .header{
   height: 64px;
   width: 100%;
+  max-width: 1300px;
   background-color: white;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,13 +73,18 @@ h3{
 .header nav a{
   margin: 0px 8px;
   font-size: 1.5rem;
-  color: rgb(128, 128, 128);
+  color: rgb(75, 75, 75);
   text-decoration: none;
+  transition: color .1s linear .075s;
+}
+
+.header nav a:hover{
+  color: rgb(47,62,115);
 }
 
 .Jumbotron_container{
   position: relative;
-  background-color: gray;
+  background-color: rgb(212, 227, 231);
   display: flex;
 }
 
@@ -97,7 +107,7 @@ h3{
 
 .Jumbotron_links{
   width:30%;
-  padding: 40px;
+  padding: 0px 40px;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -111,20 +121,20 @@ h3{
   padding: 8px 0px;
   font-size: 2rem;
   width: 100%;
-  background-color: orange;
+  background-color: rgb(79,128,140);
   text-align: center;
   border-radius: 3px;
-  transition: background-color .15s ease-out .15s;
+  transition: background-color .1s ease-out .075s;
 }
 
 .Start_here_button:hover{
-  background-color: blue;
+  background-color: rgb(93,169,113);
 }
 
 .General_info{
   display: flex;
   flex-direction: row;
-  background-color: white;
+  background-color: rgb(245,245,245);
 }
 
 .General_info h1{
@@ -146,6 +156,10 @@ h3{
   align-items: center;
 }
 
+.blocks:hover{
+  background-color: rgb(138,174,182);
+}
+
 .blocks span{
   display: block;
   margin: 8px 0px 8px 0px;
@@ -165,7 +179,7 @@ h3{
 }
 
 .start_learning{
-  background-color: white;
+  background-color: rgb(212, 227, 231);
 }
 
 .title{
@@ -188,7 +202,7 @@ h3{
 }
 
 .majors_outline{
-  background-color: gray;
+  background-color: rgb(138,174,182);
   margin: 16px 16px;
   display: flex;
   flex-direction: column;
@@ -222,7 +236,7 @@ h3{
 }
 
 .thesis{
-  background-color: gray;
+  background-color: rgb(245,245,245);
 }
 
 .thesis_info{
@@ -231,7 +245,7 @@ h3{
 }
 
 .thesis_video video{
-  border: solid black 2px;
+  border: solid black 1.5px;
   border-radius: 3px;
 }
 
@@ -248,6 +262,7 @@ h3{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-top: solid black 1px;
 }
 
 .footer_nav span{
